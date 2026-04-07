@@ -1,0 +1,31 @@
+package eshdg;
+import java.util.*;
+public class Main11 {
+	public static void main(String[] args) {
+		Employe em1=new Employe("jeeva",123,"mech");
+		Employe em2=new Employe("bhavin",456,"civil");
+		Employe em3=new Employe("saran",789,"architect");
+		System.out.println(em1);
+		System.out.println(em2);
+		System.out.println(em3);
+
+	ArrayList<Employe>list=new ArrayList<>();
+	list.add(em1);
+	list.add(em2);
+	list.add(em3);
+	System.out.println(list);
+	}
+}
+class Employe {
+	String empname;
+	int empid;
+	String depart;
+	Employe(String empname,int empid,String depart){
+	this.empname=empname;
+	this.empid=empid;
+	this.depart=depart;
+	}
+    public String toString() {
+	return empname+" "+empid+" "+depart;
+}
+}
